@@ -6,7 +6,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use App\Models\Entry;
+use Ketchalegend\FilamentSurvey\Models\Entry;
 use Ketchalegend\FilamentSurvey\Resources\EntryResource\Pages;
 
 class EntryResource extends Resource

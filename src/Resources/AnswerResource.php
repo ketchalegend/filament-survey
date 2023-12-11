@@ -6,7 +6,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use App\Models\Answer;
+use Ketchalegend\FilamentSurvey\Models\Answer;
 use Ketchalegend\FilamentSurvey\Resources\AnswerResource\Pages;
 
 class AnswerResource extends Resource

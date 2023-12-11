@@ -11,8 +11,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component as Livewire;
-use App\Models\Question;
-use App\Models\Section;
+use Ketchalegend\FilamentSurvey\Models\Question;
+use Ketchalegend\FilamentSurvey\Models\Section;
 use Ketchalegend\FilamentSurvey\Resources\QuestionResource\Pages;
 
 class QuestionResource extends Resource

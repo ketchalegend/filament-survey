@@ -8,7 +8,7 @@ use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use App\Models\Section;
+use Ketchalegend\FilamentSurvey\Models\Section;
 use Ketchalegend\FilamentSurvey\Resources\SectionResource\Pages;
 
 class SectionResource extends Resource

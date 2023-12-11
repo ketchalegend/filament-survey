@@ -14,6 +14,7 @@ class FilamentSurveyServiceProvider extends PackageServiceProvider
         $package->name('filament-survey')
             ->hasConfigFile('filament-survey')
             ->hasViews('filament-survey')
+            ->hasMigrations('create_filament_survey_table')
             ->hasTranslations();
     }
 

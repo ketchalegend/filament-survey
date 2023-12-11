@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Ketchalegend\FilamentSurvey\Models;
 
 use App\Models\Team;
 use Illuminate\Database\Eloquent\Model;

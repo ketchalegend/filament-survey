@@ -10,7 +10,7 @@ use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Table;
-use App\Models\Survey;
+use Ketchalegend\FilamentSurvey\Models\Survey;
 use Ketchalegend\FilamentSurvey\Resources\QuestionResource\Pages as QuestionPages;
 use Ketchalegend\FilamentSurvey\Resources\SurveyResource\Pages;
 use Ketchalegend\FilamentSurvey\Resources\SurveyResource\Widgets\Questions;
