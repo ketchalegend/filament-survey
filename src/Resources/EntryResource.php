@@ -20,7 +20,7 @@ class EntryResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('filament-survey.navigation.entry.sort');
+        return config('5');
     }
 
     public static function getNavigationGroup(): ?string

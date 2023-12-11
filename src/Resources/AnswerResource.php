@@ -20,7 +20,7 @@ class AnswerResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('Sort');
+        return config('4');
     }
 
     public static function getNavigationGroup(): ?string
