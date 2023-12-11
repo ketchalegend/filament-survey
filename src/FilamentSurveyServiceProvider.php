@@ -28,5 +28,9 @@ class FilamentSurveyServiceProvider extends PackageServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        $this->publishes([
+            __DIR__.'/../config/filament-survey.php' => config_path('filament-survey.php'),
+        ], 'filament-survey-config');
     }
 }
