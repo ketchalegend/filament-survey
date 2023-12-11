@@ -18,7 +18,7 @@ This package provides Filament resources for [Laravel Survey](https://github.com
 
 ### Installing the required package (Laravel Survey)
 
-This plugin uses a modifed version of [Laravel Survey](https://github.com/matt-daneshvar/laravel-survey) package: https://github.com/tappnetwork/laravel-survey/tree/translatable that adds translatable and sortable fields to the survey models. More details in this PR: [matt-daneshvar/laravel-survey#39](https://github.com/matt-daneshvar/laravel-survey/pull/39).
+This plugin uses a modifed version of [Laravel Survey](https://github.com/matt-daneshvar/laravel-survey) package: https://github.com/ketchalegend/laravel-survey/tree/translatable that adds translatable and sortable fields to the survey models. More details in this PR: [matt-daneshvar/laravel-survey#39](https://github.com/matt-daneshvar/laravel-survey/pull/39).
 
 So you must install this version instead of requiring `matt-daneshvar/laravel-survey`. In order to do so, add to your project's `composer.json`:
 
@@ -32,7 +32,7 @@ So you must install this version instead of requiring `matt-daneshvar/laravel-su
     ...
     {
         "type": "vcs",
-        "url": "https://github.com/TappNetwork/laravel-survey"
+        "url": "https://github.com/Ketchalegend/laravel-survey"
     }
 ],
 ```
@@ -60,11 +60,9 @@ php artisan migrate
 Install the plugin via Composer:
 
 ```bash
-composer require tapp/filament-survey:"^3.0"
+composer require ketchalegend/filament-survey:"^3.0"
 ```
 
-> **Note** 
-> For **Filament 2.x** check the **[2.x](https://github.com//TappNetwork/filament-survey/tree/2.x)** branch
 
 #### Optional: Publish the plugin's views, translations, and config
 
