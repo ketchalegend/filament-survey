@@ -1,9 +1,9 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\AnswerResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\AnswerResource\Pages;
 
 use Filament\Resources\Pages\EditRecord;
-use Tapp\FilamentSurvey\Resources\AnswerResource;
+use Ketchalegend\FilamentSurvey\Resources\AnswerResource;
 
 class EditAnswer extends EditRecord
 {

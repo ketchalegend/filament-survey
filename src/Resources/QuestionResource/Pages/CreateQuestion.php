@@ -1,10 +1,10 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\QuestionResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\QuestionResource\Pages;
 
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
-use Tapp\FilamentSurvey\Resources\QuestionResource;
+use Ketchalegend\FilamentSurvey\Resources\QuestionResource;
 
 class CreateQuestion extends CreateRecord
 {

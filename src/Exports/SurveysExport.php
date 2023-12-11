@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Exports;
+namespace Ketchalegend\FilamentSurvey\Exports;
 
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Concerns\FromCollection;

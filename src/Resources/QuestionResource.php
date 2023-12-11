@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources;
+namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -11,9 +11,9 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component as Livewire;
-use MattDaneshvar\Survey\Models\Question;
-use MattDaneshvar\Survey\Models\Section;
-use Tapp\FilamentSurvey\Resources\QuestionResource\Pages;
+use App\Models\Question;
+use App\Models\Section;
+use Ketchalegend\FilamentSurvey\Resources\QuestionResource\Pages;
 
 class QuestionResource extends Resource
 {

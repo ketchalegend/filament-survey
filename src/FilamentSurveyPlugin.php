@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey;
+namespace Ketchalegend\FilamentSurvey;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
@@ -27,6 +27,7 @@ class FilamentSurveyPlugin implements Plugin
 
     public function boot(Panel $panel): void
     {
-        //
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
     }
 }

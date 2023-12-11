@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources;
+namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -8,8 +8,8 @@ use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use MattDaneshvar\Survey\Models\Section;
-use Tapp\FilamentSurvey\Resources\SectionResource\Pages;
+use App\Models\Section;
+use Ketchalegend\FilamentSurvey\Resources\SectionResource\Pages;
 
 class SectionResource extends Resource
 {

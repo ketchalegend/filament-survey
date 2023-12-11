@@ -1,13 +1,13 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\SurveyResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\SurveyResource\Pages;
 
 use Filament\Actions;
 use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
-use Tapp\FilamentSurvey\Jobs\SendExportSurveys;
-use Tapp\FilamentSurvey\Resources\SurveyResource;
+use Ketchalegend\FilamentSurvey\Jobs\SendExportSurveys;
+use Ketchalegend\FilamentSurvey\Resources\SurveyResource;
 
 class ListSurveys extends ListRecords
 {

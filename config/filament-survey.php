@@ -3,11 +3,11 @@
 return [
 
     'resources' => [
-        'AnswerResource' => \Tapp\FilamentSurvey\Resources\AnswerResource::class,
-        'EntryResource' => \Tapp\FilamentSurvey\Resources\EntryResource::class,
-        'QuestionResource' => \Tapp\FilamentSurvey\Resources\QuestionResource::class,
-        'SectionResource' => \Tapp\FilamentSurvey\Resources\SectionResource::class,
-        'SurveyResource' => \Tapp\FilamentSurvey\Resources\SurveyResource::class,
+        'AnswerResource' => \Ketchalegend\FilamentSurvey\Resources\AnswerResource::class,
+        'EntryResource' => \Ketchalegend\FilamentSurvey\Resources\EntryResource::class,
+        'QuestionResource' => \Ketchalegend\FilamentSurvey\Resources\QuestionResource::class,
+        'SectionResource' => \Ketchalegend\FilamentSurvey\Resources\SectionResource::class,
+        'SurveyResource' => \Ketchalegend\FilamentSurvey\Resources\SurveyResource::class,
     ],
 
     'languages' => [

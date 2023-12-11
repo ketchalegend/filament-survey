@@ -93,7 +93,7 @@ This plugin requires the [Spatie Translatable plugin](https://filamentphp.com/pl
 
 ```php
 use Filament\SpatieLaravelTranslatablePlugin;
-use Tapp\FilamentSurvey\FilamentSurveyPlugin;
+use Ketchalegend\FilamentSurvey\FilamentSurveyPlugin;
  
 public function panel(Panel $panel): Panel
 {

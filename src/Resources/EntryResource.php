@@ -1,13 +1,13 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources;
+namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use MattDaneshvar\Survey\Models\Entry;
-use Tapp\FilamentSurvey\Resources\EntryResource\Pages;
+use App\Models\Entry;
+use Ketchalegend\FilamentSurvey\Resources\EntryResource\Pages;
 
 class EntryResource extends Resource
 {

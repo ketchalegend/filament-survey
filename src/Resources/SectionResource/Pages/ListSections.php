@@ -1,11 +1,11 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\SectionResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\SectionResource\Pages;
 
 use Filament\Actions;
 use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
-use Tapp\FilamentSurvey\Resources\SectionResource;
+use Ketchalegend\FilamentSurvey\Resources\SectionResource;
 
 class ListSections extends ListRecords
 {

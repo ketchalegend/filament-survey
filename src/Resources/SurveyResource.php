@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources;
+namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -10,10 +10,10 @@ use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Table;
-use MattDaneshvar\Survey\Models\Survey;
-use Tapp\FilamentSurvey\Resources\QuestionResource\Pages as QuestionPages;
-use Tapp\FilamentSurvey\Resources\SurveyResource\Pages;
-use Tapp\FilamentSurvey\Resources\SurveyResource\Widgets\Questions;
+use App\Models\Survey;
+use Ketchalegend\FilamentSurvey\Resources\QuestionResource\Pages as QuestionPages;
+use Ketchalegend\FilamentSurvey\Resources\SurveyResource\Pages;
+use Ketchalegend\FilamentSurvey\Resources\SurveyResource\Widgets\Questions;
 
 class SurveyResource extends Resource
 {
@@ -73,11 +73,6 @@ class SurveyResource extends Resource
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime(),
             ])
-            ->actions([
-                Action::make('CreateQuestion')
-                    ->url(fn (Survey $record): string => route('filament.admin.resources.surveys.create-question', $record->id))
-                    ->color('success'),
-            ], position: ActionsPosition::BeforeColumns)
             ->filters([
                 //
             ]);

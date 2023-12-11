@@ -1,9 +1,9 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\EntryResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\EntryResource\Pages;
 
 use Filament\Resources\Pages\EditRecord;
-use Tapp\FilamentSurvey\Resources\EntryResource;
+use Ketchalegend\FilamentSurvey\Resources\EntryResource;
 
 class EditEntry extends EditRecord
 {

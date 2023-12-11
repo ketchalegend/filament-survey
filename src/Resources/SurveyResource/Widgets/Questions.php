@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\SurveyResource\Widgets;
+namespace Ketchalegend\FilamentSurvey\Resources\SurveyResource\Widgets;
 
 use Filament\Tables;
 use Filament\Widgets\TableWidget as BaseWidget;

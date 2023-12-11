@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Jobs;
+namespace Ketchalegend\FilamentSurvey\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,8 +9,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Mail;
 use Maatwebsite\Excel\Facades\Excel;
-use Tapp\FilamentSurvey\Exports\SurveysExport;
-use Tapp\FilamentSurvey\Mail\Export;
+use Ketchalegend\FilamentSurvey\Exports\SurveysExport;
+use Ketchalegend\FilamentSurvey\Mail\Export;
 
 class SendExportSurveys implements ShouldQueue
 {

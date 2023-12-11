@@ -1,9 +1,9 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\EntryResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\EntryResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use Tapp\FilamentSurvey\Resources\EntryResource;
+use Ketchalegend\FilamentSurvey\Resources\EntryResource;
 
 class CreateEntry extends CreateRecord
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tapp\FilamentSurvey;
+namespace Ketchalegend\FilamentSurvey;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

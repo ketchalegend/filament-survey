@@ -1,13 +1,13 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources;
+namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use MattDaneshvar\Survey\Models\Answer;
-use Tapp\FilamentSurvey\Resources\AnswerResource\Pages;
+use App\Models\Answer;
+use Ketchalegend\FilamentSurvey\Resources\AnswerResource\Pages;
 
 class AnswerResource extends Resource
 {

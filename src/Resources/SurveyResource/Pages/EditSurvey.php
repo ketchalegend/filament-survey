@@ -1,10 +1,10 @@
 <?php
 
-namespace Tapp\FilamentSurvey\Resources\SurveyResource\Pages;
+namespace Ketchalegend\FilamentSurvey\Resources\SurveyResource\Pages;
 
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
-use Tapp\FilamentSurvey\Resources\SurveyResource;
+use Ketchalegend\FilamentSurvey\Resources\SurveyResource;
 
 class EditSurvey extends EditRecord
 {
