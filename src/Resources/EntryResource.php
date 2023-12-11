@@ -25,17 +25,17 @@ class EntryResource extends Resource
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-survey::filament-survey.navigation.group');
+        return __('Surveys');
     }
 
     public static function getLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.entry.label');
+        return __('Entry');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.entry.plural-label');
+        return __('Entries');
     }
 
     public static function form(Form $form): Form

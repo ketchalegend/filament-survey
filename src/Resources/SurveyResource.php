@@ -28,22 +28,22 @@ class SurveyResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('filament-survey.navigation.survey.sort');
+        return config('Sort');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-survey::filament-survey.navigation.group');
+        return __('Surveys');
     }
 
     public static function getLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.survey.label');
+        return __('Survey');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.survey.plural-label');
+        return __('Surveys');
     }
 
     public static function getTranslatableLocales(): array

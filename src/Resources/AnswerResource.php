@@ -20,22 +20,22 @@ class AnswerResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('filament-survey.navigation.answer.sort');
+        return config('Sort');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-survey::filament-survey.navigation.group');
+        return __('Surveys');
     }
 
     public static function getLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.answer.label');
+        return __('Answer');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.answer.plural-label');
+        return __('Answers');
     }
 
     public static function form(Form $form): Form

@@ -24,22 +24,22 @@ class SectionResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('filament-survey.navigation.section.sort');
+        return config('Sort');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-survey::filament-survey.navigation.group');
+        return __('Surveys');
     }
 
     public static function getLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.section.label');
+        return __('Section');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.section.plural-label');
+        return __('Sections');
     }
 
     public static function getTranslatableLocales(): array

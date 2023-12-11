@@ -28,22 +28,22 @@ class QuestionResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('filament-survey.navigation.question.sort');
+        return config('Sort');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('filament-survey::filament-survey.navigation.group');
+        return __('Surveys');
     }
 
     public static function getLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.question.label');
+        return __('Question');
     }
 
     public static function getPluralLabel(): string
     {
-        return __('filament-survey::filament-survey.navigation.question.plural-label');
+        return __('Questions');
     }
 
     public static function getTranslatableLocales(): array
