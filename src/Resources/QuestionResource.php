@@ -72,7 +72,10 @@ class QuestionResource extends Resource
                     ->placeholder('New rule')
                     ->helperText("Validation rules. Eg: ['numeric', 'min:2', 'required']"),
                 Forms\Components\Select::make('section_id')->label('Section')
-                    ->options(fn (Livewire $livewire, ?Model $record) => ! empty($livewire->survey_id) ? Section::where('survey_id', $livewire->survey_id)->pluck('name', 'id') : ($record ? Section::where('id', $record->section_id)->pluck('name', 'id') : []))
+                    ->relationship('section', 'name->en')
+                    ->helperText('To be available here, a survey should be added first on section.'),
+                Forms\Components\Select::make('survey_id')->label('Survey')
+                    ->relationship('survey', 'name->en')
                     ->helperText('To be available here, a survey should be added first on section.'),
             ]);
     }

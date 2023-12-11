@@ -73,11 +73,6 @@ class SurveyResource extends Resource
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime(),
             ])
-            ->actions([
-                Action::make('CreateQuestion')
-                    ->url(fn (Survey $record): string => route('filament.app.resources.surveys.create-question', $record->id))
-                    ->color('success'),
-            ], position: ActionsPosition::BeforeColumns)
             ->filters([
                 //
             ]);
