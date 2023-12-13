@@ -50,9 +50,7 @@ class AnswerResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('question.name'),
-                Tables\Columns\TextColumn::make('entry.participant.name')
-                    ->label(__('Participant')),
+                Tables\Columns\TextColumn::make('question.content->en'),
                 Tables\Columns\TextColumn::make('value'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),

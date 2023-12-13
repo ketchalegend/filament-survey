@@ -51,10 +51,7 @@ class EntryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('survey.name'),
-                Tables\Columns\TextColumn::make('participant.name'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime(),
             ])
             ->filters([

@@ -55,6 +55,14 @@ class QuestionResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\Select::make('section_id')->label('Section')
+                    ->relationship('section', 'name->en')
+                    ->required()
+                    ->helperText('To be available here, a survey should be added first on section.'),
+                Forms\Components\Select::make('survey_id')->label('Survey')
+                    ->relationship('survey', 'name->en')
+                    ->required()
+                    ->helperText('To be available here, a survey should be added first on section.'),
                 Forms\Components\TextInput::make('content')
                     ->required(),
                 Forms\Components\Select::make('type')
@@ -67,16 +75,11 @@ class QuestionResource extends Resource
                 Forms\Components\TagsInput::make('options')
                     ->placeholder('New option')
                     ->helperText("Used for radio and multiselect types. Eg: ['Yes', 'No']")
-                    ->visible(fn (Get $get) => $get('type') == 'radio' || $get('type') == 'multiselect'),
+                    ->visible(fn (Get $get) => $get('type') == 'radio' || $get('type') == 'multiselect')
+                    ->columnSpanFull(),
                 Forms\Components\TagsInput::make('rules')
                     ->placeholder('New rule')
-                    ->helperText("Validation rules. Eg: ['numeric', 'min:2', 'required']"),
-                Forms\Components\Select::make('section_id')->label('Section')
-                    ->relationship('section', 'name->en')
-                    ->helperText('To be available here, a survey should be added first on section.'),
-                Forms\Components\Select::make('survey_id')->label('Survey')
-                    ->relationship('survey', 'name->en')
-                    ->helperText('To be available here, a survey should be added first on section.'),
+                    ->helperText("Validation rules. Eg: 'numeric', 'min:2', 'required'"),
             ]);
     }
 
@@ -93,9 +96,7 @@ class QuestionResource extends Resource
                 Tables\Columns\TagsColumn::make('options'),
                 Tables\Columns\TagsColumn::make('rules'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
+                    ->dateTime(),,
             ])
             ->filters([
                 //

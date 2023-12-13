@@ -67,7 +67,6 @@ class SurveyResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->label('Name (English)'),
-                Tables\Columns\TextColumn::make('settings'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('updated_at')

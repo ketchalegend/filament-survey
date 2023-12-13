@@ -65,9 +65,7 @@ class SectionResource extends Resource
                 Tables\Columns\TextColumn::make('survey.name'),
                 Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
+                    ->dateTime(),,
             ])
             ->filters([
                 //
