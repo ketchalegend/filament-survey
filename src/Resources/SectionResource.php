@@ -24,7 +24,7 @@ class SectionResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('2');
+        return 2;
     }
 
     public static function getNavigationGroup(): ?string

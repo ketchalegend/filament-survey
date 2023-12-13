@@ -28,7 +28,7 @@ class SurveyResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('1');
+        return 1;
     }
 
     public static function getNavigationGroup(): ?string

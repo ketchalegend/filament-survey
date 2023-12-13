@@ -28,7 +28,7 @@ class QuestionResource extends Resource
 
     public static function getNavigationSort(): ?int
     {
-        return config('3');
+        return 3;
     }
 
     public static function getNavigationGroup(): ?string
@@ -64,6 +64,7 @@ class QuestionResource extends Resource
                     ->required()
                     ->helperText('To be available here, a survey should be added first on section.'),
                 Forms\Components\TextInput::make('content')
+                ->label('Question')
                     ->required(),
                 Forms\Components\Select::make('type')
                     ->required()
@@ -76,10 +77,11 @@ class QuestionResource extends Resource
                     ->placeholder('New option')
                     ->helperText("Used for radio and multiselect types. Eg: ['Yes', 'No']")
                     ->visible(fn (Get $get) => $get('type') == 'radio' || $get('type') == 'multiselect')
-                    ->columnSpanFull(),
+                    ->columns(2),
                 Forms\Components\TagsInput::make('rules')
                     ->placeholder('New rule')
-                    ->helperText("Validation rules. Eg: 'numeric', 'min:2', 'required'"),
+                    ->helperText("Validation rules. Eg: 'numeric', 'min:2', 'required'")
+                    ->columns(2),
             ]);
     }
 
@@ -106,7 +108,7 @@ class QuestionResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            QuestionResource\RelationManagers\AnswersRelationManager::class,
         ];
     }
 

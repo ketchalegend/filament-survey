@@ -3,8 +3,6 @@
 return [
 
     'resources' => [
-        'AnswerResource' => \Ketchalegend\FilamentSurvey\Resources\AnswerResource::class,
-        'EntryResource' => \Ketchalegend\FilamentSurvey\Resources\EntryResource::class,
         'QuestionResource' => \Ketchalegend\FilamentSurvey\Resources\QuestionResource::class,
         'SectionResource' => \Ketchalegend\FilamentSurvey\Resources\SectionResource::class,
         'SurveyResource' => \Ketchalegend\FilamentSurvey\Resources\SurveyResource::class,
@@ -12,7 +10,6 @@ return [
 
     'languages' => [
         'en' => 'English',
-        'es' => 'Spanish',
     ],
 
     'navigation' => [
