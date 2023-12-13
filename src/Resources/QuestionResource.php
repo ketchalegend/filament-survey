@@ -96,7 +96,7 @@ class QuestionResource extends Resource
                 Tables\Columns\TagsColumn::make('options'),
                 Tables\Columns\TagsColumn::make('rules'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime(),,
+                    ->dateTime(),
             ])
             ->filters([
                 //
