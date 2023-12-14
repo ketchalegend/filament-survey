@@ -31,16 +31,21 @@ class Questions extends BaseWidget
         return [
             Tables\Columns\TextColumn::make('section.name')
                 ->toggleable(),
-            Tables\Columns\TextColumn::make('content'),
+            Tables\Columns\TextColumn::make('content')
+                ->label(__('Question')),
             Tables\Columns\TextColumn::make('type')
-                ->toggleable(),
+                ->toggleable()
+                ->badge()
+                ->color(fn (string $state): string => match ($state) {
+                    'text' => 'gray',
+                    'multiselect' => 'warning',
+                    'radio' => 'success',
+                    'number' => 'danger',
+                }),
             Tables\Columns\TextColumn::make('order')
                 ->toggleable()
                 ->sortable(),
             Tables\Columns\TextColumn::make('created_at')
-                ->toggleable()
-                ->dateTime(),
-            Tables\Columns\TextColumn::make('updated_at')
                 ->toggleable()
                 ->dateTime(),
         ];

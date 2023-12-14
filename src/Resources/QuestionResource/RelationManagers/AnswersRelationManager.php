@@ -31,6 +31,9 @@ class AnswersRelationManager extends RelationManager
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('id')
+                ->sortable(),
+                Tables\Columns\TextColumn::make('question.content'),
                 Tables\Columns\TextColumn::make('value')
                 ->label('Answers'),
             ])

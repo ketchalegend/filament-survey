@@ -3,6 +3,7 @@
 namespace Ketchalegend\FilamentSurvey\Resources;
 
 use Filament\Forms;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
@@ -55,9 +56,16 @@ class SurveyResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required(),
-                Forms\Components\TextInput::make('settings'),
+                Forms\Components\Section::make('Survey')
+                    ->schema([
+                    Forms\Components\TextInput::make('name')
+                        ->required()
+                        ->columnSpanFull(),
+                    Forms\Components\RichEditor::make('description')
+                        ->required()
+                        ->columnSpanFull(),
+                    ]),
+                
             ]);
     }
 
@@ -66,11 +74,31 @@ class SurveyResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->label('Name (English)'),
+                    ->label('Name')
+                    ->translateLabel(),
+               // Tables\Columns\TextColumn::make('name')
+                //->description(fn (Survey $record): string => route('survey.create', ['uuid' => $record->uuid]), position: 'below'),
+                Tables\Columns\TextColumn::make('link')
+                ->label(__('Survey Link'))
+                ->color('primary')
+                ->default(function ($record) {
+                    $baseUrl = config('app.url');
+
+                    return $baseUrl . '/survey/' . $record->uuid ;
+                })
+                ->copyable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime(),
+            ])
+            ->actions([
+                Action::make('edit')
+                    ->label(__('Edit'))
+                    ->icon('heroicon-o-pencil')
+                    ->url(fn (Survey $record) => static::getUrl('edit', ['record' => $record])),
+                Action::make('create-question')
+                    ->label(__('Create Question'))
+                    ->icon('heroicon-o-plus-circle')
+                    ->url(fn (Survey $record) => QuestionPages\CreateQuestion::getUrl(['survey_id' => $record->id])),
             ])
             ->filters([
                 //

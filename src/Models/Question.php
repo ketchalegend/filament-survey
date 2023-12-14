@@ -10,6 +10,7 @@ use MattDaneshvar\Survey\Models\Question as BaseQuestion;
 class Question extends BaseQuestion
 {
     use HasFactory;
+    
 
     public function team()
     {

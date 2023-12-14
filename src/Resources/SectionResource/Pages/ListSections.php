@@ -18,7 +18,7 @@ class ListSections extends ListRecords
         return [
             Action::make('create')
                 ->url(SectionResource::getUrl('create')),
-            Actions\LocaleSwitcher::make(),
+            //Actions\LocaleSwitcher::make(),
         ];
     }
 }
